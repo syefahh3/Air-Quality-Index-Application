@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index Application</title>
+    <style>
+        .frame {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+        .row {
+            display: flex;
+        }
+        .box {
+            border: 1px solid black;
+            width: 750px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+        .box3 {
+            height: 800px;
+        }
+        .box4 {
+            height: 400px;
+        }
+        .reg {
+            justify-content:start;
+            align-items:start;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="frame">
+        <div class="row">
+            <div class="column">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+            </div>
+            <div class="column">
+                <div class="box box3">
+                    <h1>REGISTRATION BOX</h1>
+                    <form>
+                        <label for="fname">Full Name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password"><br><br>
+                        <label for="cpassword">Confirm Password:</label>
+                        <input type="password" id="cpassword" name="cpassword"><br><br>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location"><br><br>
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="number" id="zipcode" name="zipcode"><br><br>
+                        <input type="checkbox" name=""><br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+                 <div class="box box4">Box 4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
