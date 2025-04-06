@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Index Application</title>
     <style>
+        .top img {
+            width: 5%;
+            height: 5%;
+            margin: 0 auto;
+            display: block;
+            padding-top:80px;
+
+        }
+        .top {
+	        text-align: center;
+        }
+
         .frame {
-            display: flex;
-            flex-direction: column;
-            width: fit-content;
+            width:80%;
+	        margin: auto;
+            padding-top:80px;
         }
         .row {
             display: flex;
@@ -20,6 +32,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top:20px;
+            padding-bottom:20px;
+            padding-right:20px;
+            padding-bottom: 20px;
+
         }
         .column {
             display: flex;
@@ -28,16 +45,20 @@
         .box3 {
             height: 800px;
         }
+        .box3 h2 {
+	        text-align: center;
+        }
+
         .box4 {
             height: 400px;
-        }
-        .reg {
-            justify-content:start;
-            align-items:start;
         }
     </style>
 </head>
 <body>
+
+    <div class="top">
+        <img src="asset\air.jpg" >
+        <h2>AIR QUALITY INDEX</h2></div>
 
     <div class="frame">
         <div class="row">
@@ -47,8 +68,9 @@
             </div>
             <div class="column">
                 <div class="box box3">
-                    <h1>REGISTRATION BOX</h1>
+                    
                     <form>
+                        <h2>Registration Box</h2>
                         <label for="fname">Full Name:</label>
                         <input type="text" id="fname" name="fname"><br><br>
                         <label for="email">Email:</label>
@@ -61,7 +83,10 @@
                         <input type="text" id="location" name="location"><br><br>
                         <label for="zipcode">Zip Code:</label>
                         <input type="number" id="zipcode" name="zipcode"><br><br>
-                        <input type="checkbox" name=""><br><br>
+                        <label> 
+                            <input type="checkbox" id="termsCheckbox">
+                            I agree to the <a href="#">Terms and Conditions</a>
+                        </label><br><br>
                         <input type="submit" value="Submit">
                       </form>
                 </div>
