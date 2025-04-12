@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Index Application</title>
+    <link rel="icon" href="asset\air.jpg">
     <style>
         .top img {
             width: 5%;
@@ -17,17 +18,18 @@
 	        text-align: center;
         }
 
-        .frame {
+        .container {
             width:80%;
 	        margin: auto;
             padding-top:80px;
         }
         .row {
+            
             display: flex;
         }
         .box {
             border: 1px solid black;
-            width: 750px;
+            width: 550px;
             height: 600px;
             display: flex;
             justify-content: center;
@@ -52,6 +54,17 @@
         .box4 {
             height: 400px;
         }
+        select {
+            width: 100px;
+        }
+        #errormessage {
+            color: red;
+        }
+        #passmatch {
+            color: red;
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
@@ -60,40 +73,51 @@
         <img src="asset\air.jpg" >
         <h2>AIR QUALITY INDEX</h2></div>
 
-    <div class="frame">
+    <div class="container">
         <div class="row">
             <div class="column">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
             <div class="column">
                 <div class="box box3">
                     
                     <form>
+                        <div id="errormessage"></div>
                         <h2>Registration Box</h2>
-                        <label for="fname">Full Name:</label>
-                        <input type="text" id="fname" name="fname"><br><br>
-                        <label for="email">Email:</label>
+                        <label for="name">Full Name:</label><br><br>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label><br><br>
                         <input type="text" id="email" name="email"><br><br>
-                        <label for="password">Password:</label>
+                        <label for="password">Password:</label><br><br>
                         <input type="password" id="password" name="password"><br><br>
-                        <label for="cpassword">Confirm Password:</label>
+                        <label for="cpassword">Confirm Password:</label><br><br>
                         <input type="password" id="cpassword" name="cpassword"><br><br>
-                        <label for="location">Location:</label>
+                        <label for="location">Location:</label><br><br>
                         <input type="text" id="location" name="location"><br><br>
-                        <label for="zipcode">Zip Code:</label>
-                        <input type="number" id="zipcode" name="zipcode"><br><br>
+                        <label for="zipcode">Zip Code:</label><br><br>
+                        <select id="zipcode" name="zipcode">
+                            <option value="">---</option>
+                            <option value="Dhaka">1204</option>
+                            <option value="Rajshahi">6100</option>
+                            <option value="Sylhet">3100</option>
+                            <option value="Barishal">8200</option>
+                            <option value="Rangpur">5402</option>
+                            <option value="Chittagong">4100</option>
+                        </select><br><br>
                         <label> 
-                            <input type="checkbox" id="termsCheckbox">
+                            <input type="checkbox" id="termsCheck">
                             I agree to the <a href="#">Terms and Conditions</a>
                         </label><br><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" name="submit" value="submit" onclick="return validate()">
                       </form>
                 </div>
-                 <div class="box box4">Box 4</div>
+                <div class="box box4"></div>
             </div>
         </div>
     </div>
+
+    <script src="code.js"></script>
 
 </body>
 </html>
