@@ -1,0 +1,17 @@
+td {
+    background-color: white;
+    border: 1px solid;
+    height: 40px;
+    width: 200px;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+th {
+    vertical-align: middle;
+    text-align: center;
+}
+#tbl {
+    font-weight: bold;
+    padding: 10px;
+}

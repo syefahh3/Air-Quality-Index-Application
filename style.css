@@ -1,0 +1,58 @@
+.top img {
+    width: 10%;
+    height: 10%;
+    margin: 0 auto;
+    display: block;
+
+}
+.top {
+    text-align: center;
+}
+
+.container {
+    width:68%;
+    margin: auto;
+    padding-top:40px;
+}
+.row {
+    
+    display: flex;
+}
+.box {
+    background-color:aliceblue;
+    border: 1px solid grey;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.box3 {
+    height: 800px;
+}
+.box3 h2 {
+    text-align: center;
+}
+
+.box4 {
+    height: 400px;
+}
+select {
+    width: 170px;
+}
+#errormessage {
+    color: red;
+}
+#passmatch {
+    color: red;
+    text-align: right;
+}
+#submit {
+    width: 100px;
+    vertical-align: middle;
+}
