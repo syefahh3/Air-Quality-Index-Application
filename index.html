@@ -5,70 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Index Application</title>
     <link rel="icon" href="asset\air.jpg">
-    <style>
-        .top img {
-            width: 5%;
-            height: 5%;
-            margin: 0 auto;
-            display: block;
-            padding-top:80px;
-
-        }
-        .top {
-	        text-align: center;
-        }
-
-        .container {
-            width:80%;
-	        margin: auto;
-            padding-top:80px;
-        }
-        .row {
-            
-            display: flex;
-        }
-        .box {
-            border: 1px solid black;
-            width: 550px;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top:20px;
-            padding-bottom:20px;
-            padding-right:20px;
-            padding-bottom: 20px;
-
-        }
-        .column {
-            display: flex;
-            flex-direction: column;
-        }
-        .box3 {
-            height: 800px;
-        }
-        .box3 h2 {
-	        text-align: center;
-        }
-
-        .box4 {
-            height: 400px;
-        }
-        select {
-            width: 100px;
-        }
-        #errormessage {
-            color: red;
-        }
-        #passmatch {
-            color: red;
-            text-align: right;
-        }
-
-    </style>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="aqistyle.css">
 </head>
 <body>
-
     <div class="top">
         <img src="asset\air.jpg" >
         <h2>AIR QUALITY INDEX</h2></div>
@@ -76,13 +16,33 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <div class="box"></div>
+                <div class="box">
+                    <table>
+                        <caption id="tbl">AQI of 10 cities</caption>
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr><td>city1</td><td>data1</td></tr>
+                            <tr><td>city1</td><td>data2</td></tr>
+                            <tr><td>city3</td><td>data3</td></tr>
+                            <tr><td>city4</td><td>data4</td></tr>
+                            <tr><td>city5</td><td>data5</td></tr>
+                            <tr><td>city6</td><td>data6</td></tr>
+                            <tr><td>city7</td><td>data7</td></tr>
+                            <tr><td>city8</td><td>data8</td></tr>
+                            <tr><td>city9</td><td>data9</td></tr>
+                            <tr><td>city10</td><td>data10</td></tr>
+                            
+                        </tbody>
+                      
+                    </table>
+                </div>
                 <div class="box"></div>
             </div>
             <div class="column">
                 <div class="box box3">
                     
-                    <form>
+                    <form class="form1">
                         <div id="errormessage"></div>
                         <h2>Registration Box</h2>
                         <label for="name">Full Name:</label><br><br>
@@ -105,11 +65,9 @@
                             <option value="Rangpur">5402</option>
                             <option value="Chittagong">4100</option>
                         </select><br><br>
-                        <label> 
-                            <input type="checkbox" id="termsCheck">
-                            I agree to the <a href="#">Terms and Conditions</a>
-                        </label><br><br>
-                        <input type="submit" name="submit" value="submit" onclick="return validate()">
+                        <label> I agree to the <a href="#">Terms and Conditions</a></label>
+                        <input type="checkbox" id="termsCheck"><br><br>
+                        <input type="submit" id = "submit" name="submit" value="submit" onclick="return validate()">
                       </form>
                 </div>
                 <div class="box box4"></div>
