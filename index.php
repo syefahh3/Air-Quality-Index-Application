@@ -42,11 +42,11 @@
             <div class="column">
                 <div class="box box3">
                     
-                    <form class="form1">
+                    <form action="process.php" method="post">
                         <div id="errormessage"></div>
                         <h2>Registration Box</h2>
                         <label for="name">Full Name:</label><br><br>
-                        <input type="text" id="name" name="name"><br><br>
+                        <input type="text" id="uname" name="name"><br><br>
                         <label for="email">Email:</label><br><br>
                         <input type="text" id="email" name="email"><br><br>
                         <label for="password">Password:</label><br><br>
@@ -58,12 +58,12 @@
                         <label for="zipcode">Zip Code:</label><br><br>
                         <select id="zipcode" name="zipcode">
                             <option value="">---</option>
-                            <option value="Dhaka">1204</option>
-                            <option value="Rajshahi">6100</option>
-                            <option value="Sylhet">3100</option>
-                            <option value="Barishal">8200</option>
-                            <option value="Rangpur">5402</option>
-                            <option value="Chittagong">4100</option>
+                            <option value="1204">1204</option>
+                            <option value="6100">6100</option>
+                            <option value="3100">3100</option>
+                            <option value="8200">8200</option>
+                            <option value="5402">5402</option>
+                            <option value="4100">4100</option>
                         </select><br><br>
                         <label> I agree to the <a href="#">Terms and Conditions</a></label>
                         <input type="checkbox" id="termsCheck"><br><br>
