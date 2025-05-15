@@ -1,6 +1,6 @@
 function validate() {
 
-    let name = document.getElementById('name').value;
+    let name = document.getElementById('uname').value;
     let email = document.getElementById('email').value;
     let pass = document.getElementById('password').value;
     let cpass = document.getElementById('cpassword').value;
