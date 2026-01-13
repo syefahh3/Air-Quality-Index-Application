@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Quality Index Application</title>
-    <link rel="icon" href="asset\air.jpg">
-    <link rel="stylesheet" type= "text/css" href="style.css">
-    <link rel="stylesheet" type= "text/css" href="aqistyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
 </head>
+
 <body>
-    <div class="top">
-        <img src="asset\air.jpg" >
-        <h2>AIR QUALITY INDEX</h2></div>
-
+  <div class="header">
+    <img
+      src="Image/logo.png"
+      alt="">
+    <h3>Air Quality Index</h3>
+  </div>
+  <div class="fullbox">
     <div class="container">
-        <div class="row">
-            <div class="column">
-                <div class="box">
-                    <table>
-                        <caption id="tbl">AQI of 10 cities</caption>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr><td>city1</td><td>data1</td></tr>
-                            <tr><td>city1</td><td>data2</td></tr>
-                            <tr><td>city3</td><td>data3</td></tr>
-                            <tr><td>city4</td><td>data4</td></tr>
-                            <tr><td>city5</td><td>data5</td></tr>
-                            <tr><td>city6</td><td>data6</td></tr>
-                            <tr><td>city7</td><td>data7</td></tr>
-                            <tr><td>city8</td><td>data8</td></tr>
-                            <tr><td>city9</td><td>data9</td></tr>
-                            <tr><td>city10</td><td>data10</td></tr>
-                            
-                        </tbody>
-                      
-                    </table>
-                </div>
-                <div class="box"></div>
-            </div>
-            <div class="column">
-                <div class="box box3">
-                    
-                    <form action="process.php" method="post">
-                        <div id="errormessage"></div>
-                        <h2>Registration Box</h2>
-                        <label for="name">Full Name:</label><br><br>
-                        <input type="text" id="uname" name="name"><br><br>
-                        <label for="email">Email:</label><br><br>
-                        <input type="text" id="email" name="email"><br><br>
-                        <label for="password">Password:</label><br><br>
-                        <input type="password" id="password" name="password"><br><br>
-                        <label for="cpassword">Confirm Password:</label><br><br>
-                        <input type="password" id="cpassword" name="cpassword"><br><br>
-                        <label for="location">Location:</label><br><br>
-                        <input type="text" id="location" name="location"><br><br>
-                        <label for="zipcode">Zip Code:</label><br><br>
-                        <select id="zipcode" name="zipcode">
-                            <option value="">---</option>
-                            <option value="1204">1204</option>
-                            <option value="6100">6100</option>
-                            <option value="3100">3100</option>
-                            <option value="8200">8200</option>
-                            <option value="5402">5402</option>
-                            <option value="4100">4100</option>
-                        </select><br><br>
-                        <label> I agree to the <a href="#">Terms and Conditions</a></label>
-                        <input type="checkbox" id="termsCheck"><br><br>
-                        <input type="submit" id = "submit" name="submit" value="submit" onclick="return validate()">
-                      </form>
-                </div>
-                <div class="box box4"></div>
-            </div>
+      <div class="box1">
+        <div class="table">
+          <table>
+            <caption id="caption">Top 10 Cities</caption>
+            <thead></thead>
+            <tbody>
+
+              <tr>
+                <td>City1</td>
+                <td>Data1</td>
+              </tr>
+              <tr>
+                <td>City2</td>
+                <td>Data2</td>
+              </tr>
+              <tr>
+                <td>City3</td>
+                <td>Data3</td>
+              </tr>
+              <tr>
+                <td>City4</td>
+                <td>Data4</td>
+              </tr>
+              <tr>
+                <td>City5</td>
+                <td>Data5</td>
+              </tr>
+              <tr>
+                <td>City6</td>
+                <td>Data6</td>
+              </tr>
+              <tr>
+                <td>City7</td>
+                <td>Data7</td>
+              </tr>
+              <tr>
+                <td>City8</td>
+                <td>Data8</td>
+              </tr>
+              <tr>
+                <td>City9</td>
+                <td>Data9</td>
+              </tr>
+              <tr>
+                <td>City10</td>
+                <td>Data10</td>
+              </tr>
+
+            </tbody>
+          </table>
         </div>
+
+      </div>
+      <div class="box2">Box2</div>
     </div>
+    <div class="container2">
+      <div class="box3">
+        <div class="registration">
+          <h4>Registration Box</h4>
+          <form action="process.php" method="POST">
 
-    <script src="code.js"></script>
+            <label for="fullname">Enter Full Name</label>
+            <input id="fname" name="fname" class="inputbox" type="text" placeholder="Full Name">
+            <label for="email">Enter E-mail</label>
+            <input id="email" name="email" class="inputbox" type="email" placeholder="xx-xxxxx-x@student.aiub.edu">
+            <label for="password">Enter Password</label>
+            <input id="pass" name="pass" class="inputbox" type="password" placeholder="Password">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="cpass" name="cpass" class="inputbox" type="password" placeholder="Confirm Password">
+            <label for="location">Enter Your Location</label>
+            <input id="loc" name="loc" class="inputbox" type="text" placeholder="Location">
+            <label for="zipCode">Enter Your Area Zip Code</label>
+            <input id="zipcode" name="zipcode" class="inputbox" type="number" placeholder="Zip Code">
+            <label for="color">Choose Background Color:</label>
+            <input type="color" class="color" id="color" name="color">
+            <input type="checkbox" name="ucheck" id="checkbox" class="check">I agree with terms and conditions
+           <input class="SubmitButton" name="submit" type="submit" value="Submit" onclick="return vadidate()">
+          </form>
+          <p id="error" class="errormsg"></p>
+        </div> 
+      </div>
+      <div class="box4">
 
+      <h3>Login</h3>
+
+      <div class="loginBox">
+        <form class="loginForm" action="loginprocess.php" method="POST">
+
+          <label for="Lemail">Email</label>
+          <input id="lemail" name="lemail" class="login" type="email" placeholder="xx-xxxxx-x@student.aiub.edu">
+          <label for="Lpassword">Enter Password</label>
+          <input id="lpass" name="lpass" class="login" type="password" placeholder="Password">
+          <input type="submit" name="lsubmit" class="SubmitButton" id="lsubmit" value="Login">
+
+        </form>
+      </div>
+      <p id="msg" class="msg"></p>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
