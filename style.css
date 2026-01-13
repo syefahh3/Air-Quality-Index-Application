@@ -1,58 +1,106 @@
-.top img {
-    width: 10%;
-    height: 10%;
-    margin: 0 auto;
-    display: block;
 
-}
-.top {
-    text-align: center;
-}
+    h3 {
+      text-align: center;
+      font-size: 30px;
+    }
 
-.container {
-    width:68%;
-    margin: auto;
-    justify-content: center;
-    padding-top:40px;
-}
-.row {
-    
-    display: flex;
-}
-.box {
-    background-color:aliceblue;
-    border: 1px solid grey;
-    width: 500px;
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+    .fullbox {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
 
-}
-.column {
-    display: flex;
-    flex-direction: column;
-}
-.box3 {
-    height: 800px;
-}
-.box3 h2 {
-    text-align: center;
-}
+    }
 
-.box4 {
-    height: 400px;
-}
-select {
-    width: 170px;
-}
-#errormessage {
+    .box1 {
+      border: 1px solid black;
+      height: 100vmin;
+      width: 60vmin;
+    }
+
+    .box2 {
+      border: 1px solid black;
+      height: 100vmin;
+      width: 60vmin;
+    }
+
+    .box3 {
+      border: 1px solid black;
+      height: 120vmin;
+      width: 60vmin;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .box4 {
+      border: 1px solid black;
+      height: 80vmin;
+      width: 60vmin;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .registration{
+      height: 65vmin;
+      width: 45vmin;
+      margin: auto;
+      background-color: white;
+    }
+
+    form{
+      width: 40vmin;
+    }
+
+    form label,.select{
+      display: flex;
+      margin: 5px 0px 5px 0px;
+    }
+   
+    h4{
+      font-size: 20px;
+    }
+
+    .select{
+      padding-left: 5px;
+    }
+    .inputbox{
+      width: 100%;
+      padding: 7px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .SubmitButton{
+      height: 35px;
+      width: 100px;
+      margin: 5px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 15px;      
+    }
+    .SubmitButton:hover{
+      background-color: rgb(3, 82, 3);
+    }
+   .errormsg{
     color: red;
-}
-#passmatch {
-    color: red;
-    text-align: right;
-}
-#submit {
-    width: 100px;
-    vertical-align: middle;
-}
+   }
+   .box{
+    color: green;
+   }
+   .color{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+   }
